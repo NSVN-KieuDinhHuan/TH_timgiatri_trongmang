@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tìm giá trị trong mảng</title>
+</head>
+<body>
+<script>
+    let value = parseInt(prompt("Enter a number: "));
+    let numbers = [-3, 5, 1, 3, 2, 10];
+    let is=false
+    for (let i = 0; i < numbers.length; i++) {
+        if (value === numbers[i]) {
+            alert("Value " + numbers[i] + " found at " + i);
+            is=true
+        }
+    }
+
+    if (is===false) {
+        alert("không có "+ value + " trong mảng");
+    }
+</script>
+</body>
+</html>
